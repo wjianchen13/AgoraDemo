@@ -13,7 +13,16 @@
         android:gravity="center"
         android:textSize="20sp"
         android:layout_marginTop="10dp"
-        android:text="声音测试" />
+        android:text="上下麦回调" />
+
+    <EditText
+        android:id="@+id/edtv_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:hint="请输入uid" />
 
     <Button
         android:layout_width="match_parent"
@@ -36,7 +45,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:layout_marginTop="10dp"
-        android:text="加入频道并发布音频流"
+        android:text="加入频道"
         android:onClick="onTest3" />
 
     <Button
@@ -44,7 +53,23 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:layout_marginTop="10dp"
-        android:text="销毁引擎"
+        android:text="切换成主播"
         android:onClick="onTest4" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="切换成用户"
+        android:onClick="onTest5" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="销毁引擎"
+        android:onClick="onTest6" />
 
 </LinearLayout>

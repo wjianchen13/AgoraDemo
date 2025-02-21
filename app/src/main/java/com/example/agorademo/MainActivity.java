@@ -7,7 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.agorademo.test1.TestActivity1;
-import com.example.agorademo.test1.TestActivity2;
+import com.example.agorademo.test1.TestActivity12;
+import com.example.agorademo.test2.TestActivity2;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,6 +24,14 @@ public class MainActivity extends AppCompatActivity {
      */
     public void onTest1(View v) {
         startActivity(new Intent(this, TestActivity1.class));
+    }
+
+    /**
+     * 上下麦回调
+     * @param v
+     */
+    public void onTest2(View v) {
+        startActivity(new Intent(this, TestActivity2.class));
     }
 
 

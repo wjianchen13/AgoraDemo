@@ -3,7 +3,6 @@ package com.example.agorademo.test1;
 import android.Manifest;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -19,23 +18,7 @@ import io.agora.rtc2.IRtcEngineEventHandler;
 import io.agora.rtc2.RtcEngine;
 import io.agora.rtc2.RtcEngineConfig;
 
-import android.Manifest;
-import android.content.pm.PackageManager;
-import android.os.Bundle;
-import android.widget.Toast;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
-
-import io.agora.rtc2.ChannelMediaOptions;
-import io.agora.rtc2.Constants;
-import io.agora.rtc2.IRtcEngineEventHandler;
-import io.agora.rtc2.RtcEngine;
-import io.agora.rtc2.RtcEngineConfig;
-
-public class TestActivity2 extends AppCompatActivity {
+public class TestActivity12 extends AppCompatActivity {
 
     // 填写声网控制台中获取的 App ID
     private String appId = "823e9c477e9e4803bf7562f7030acc47";
@@ -52,7 +35,7 @@ public class TestActivity2 extends AppCompatActivity {
         public void onJoinChannelSuccess(String channel, int uid, int elapsed) {
             super.onJoinChannelSuccess(channel, uid, elapsed);
             runOnUiThread(() -> {
-                Toast.makeText(TestActivity2.this, "Join channel success", Toast.LENGTH_SHORT).show();
+                Toast.makeText(TestActivity12.this, "Join channel success", Toast.LENGTH_SHORT).show();
             });
         }
 
@@ -61,7 +44,7 @@ public class TestActivity2 extends AppCompatActivity {
         public void onUserJoined(int uid, int elapsed) {
             super.onUserJoined(uid, elapsed);
             runOnUiThread(() -> {
-                Toast.makeText(TestActivity2.this, "User joined: " + uid, Toast.LENGTH_SHORT).show();
+                Toast.makeText(TestActivity12.this, "User joined: " + uid, Toast.LENGTH_SHORT).show();
             });
         }
 
@@ -70,7 +53,7 @@ public class TestActivity2 extends AppCompatActivity {
         public void onUserOffline(int uid, int reason) {
             super.onUserOffline(uid, reason);
             runOnUiThread(() -> {
-                Toast.makeText(TestActivity2.this, "User offline: " + uid, Toast.LENGTH_SHORT).show();
+                Toast.makeText(TestActivity12.this, "User offline: " + uid, Toast.LENGTH_SHORT).show();
             });
         }
     };
@@ -134,7 +117,7 @@ public class TestActivity2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_test2);
+        setContentView(R.layout.activity_test12);
         // 如果已经授权，则初始化 RtcEngine 并加入频道
         if (checkPermissions()) {
             initializeAndJoinChannel();

@@ -13,14 +13,14 @@
         android:gravity="center"
         android:textSize="20sp"
         android:layout_marginTop="10dp"
-        android:text="声网基础测试" />
+        android:text="声音测试" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:layout_marginTop="10dp"
-        android:text="声音测试"
+        android:text="请求权限"
         android:onClick="onTest1" />
 
     <Button
@@ -28,7 +28,23 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:layout_marginTop="10dp"
-        android:text="上下麦回调"
+        android:text="初始化引擎"
         android:onClick="onTest2" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="加入频道并发布音频流"
+        android:onClick="onTest3" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="销毁引擎"
+        android:onClick="onTest4" />
 
 </LinearLayout>
